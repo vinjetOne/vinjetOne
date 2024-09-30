@@ -1,3 +1,73 @@
-baseURL = 'https://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+baseURL = "http://www.star-tour.cn"
+title = "深圳市星程国际旅行社有限公司"
+author = "star-tour"
+languageCode = "en"
+DefaultContentLanguage = "en"
+enableInlineShortcodes = true
+theme = "tella"
+enableRobotsTXT = true
+
+# Please enable this feature if the site is available in Japanese, Chinese or Korean.
+#hasCJKLanguage = true
+
+# If you're using Google Analytics, you can enable this feature.
+#googleAnalytics = "UA-12345678-1"
+
+# Disqus Comment System
+#disqusShortname = ""
+
+[params]
+
+  showBlog = false
+  mainSections = ['about']
+
+  googleFonts = true
+
+  [params.logo]
+    main = "img/logo/logo.svg"
+    alt = "深圳市星程国际旅行社有限公司"
+
+    # The size parameter is the class name of tailwindcss
+    # https://tailwindcss.com/
+    size = "h-14"
+
+  [params.site]
+    name = "深圳市星程国际旅行社有限公司"
+
+  [params.icon]
+    #If you want to use FontAwesome, set this parameter to true.
+    fontawesome = true
+
+  [params.homepage_meta_tags]
+    meta_description = "深圳市星程国际旅行社有限公司, 星程, 旅行社, 旅游, 旅行"
+    meta_og_title = "深圳市星程国际旅行社有限公司"
+    meta_og_type = "website"
+    meta_og_url = "http://www.star-tour.cn"
+    meta_og_image = "https://raw.githubusercontent.com/opera7133/tella/master/images/tn.png"
+    meta_og_description = "深圳市星程国际旅行社有限公司成立于2022年6月"
+
+[menu]
+
+  [[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 1
+
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 2
+
+  [[menu.main]]
+    identifier = "contact"
+    name = "Contact"
+    url = "/contact/"
+    weight = 3
+
+  # Footer Menu
+  [[menu.footer]]
+    name = "Home"
+    url = "/"
+      weight = 1
